@@ -16,7 +16,7 @@ searchInput.addEventListener('input', () => {
       const countryHTML = countries
         .map((country) => `
           <div>
-          <img src="${country.flags.png}" alt="${country.name.common}" width="100">
+          <img src="${country.flags[1]}" alt="${country.name.common}" width="100">
             <h2>${country.name.common}</h2>
             <p><strong>Population:</strong> ${country.population}</p>
             <p><strong>Region:</strong> ${country.region}</p>
